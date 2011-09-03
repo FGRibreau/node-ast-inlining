@@ -1,0 +1,24 @@
+{
+    "name" : "ast-inlining",
+    "description" : "Nodejs language detection library using n-gram",
+    "keywords": ["ast", "inlining", "inline expansion"],
+    "version": "1.0.0",
+    "homepage": "https://github.com/FGRibreau/node-ast-inlining/",
+    "author" : "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
+    "main" : "index",
+    "repository": "git://github.com/FGRibreau/node-ast-inlining.git",
+    "licenses" : [
+        {
+            "type" : "BSD",
+            "url" : "https://github.com/FGRibreau/node-ast-inlining/blob/master/LICENSE"
+        }
+    ],
+    "dependencies": { 
+        "uglify-js":">= 1.0.2"
+    },
+    "devDependencies":{
+        "jslitmus":">= 0.1.0",
+        "nodeunit":">= 0.5.1"
+    },
+    "engines": { "node": ">= 0.4.8" }
+}
