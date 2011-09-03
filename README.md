@@ -4,7 +4,7 @@ Node Ast Inlining is a small (~200 LOC) library that [inline and expand](http://
 
 ### Work In Progress
 
-Node Ast Inlining currently inling-expand only method calls and inline simple function with return statement.
+Node Ast Inlining currently inling only method calls and expand simple function with one return statement.
 
 ### Installation
 
@@ -60,9 +60,8 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 
     % node bench/bench.js
 
-![Benchmark](http://bit.ly/r9wAwI "Benchmark's result")
-
-![Benchmark](http://bit.ly/r6pUZp "Benchmark's result")
+[(chart) 1st try](http://bit.ly/r9wAwI)
+[(chart) 2nd try](http://bit.ly/r6pUZp)
 
 ### Tests
     % make test
@@ -71,8 +70,8 @@ This package can be installed via [npm](http://npmjs.org/) as follows
     % nodeunit test/ast_inlining.test.js
 
 ### TODO
- * `extremeInline` option which inline native Number and String's prototype method like toLowerCase()
- * Inline & expand small function < 5 LOC  
+ * `extremeInline` option for native Date, Number and String's prototype method inlining
+ * Inline & expand small function < 10 LOC
 
 ### Licence
 
