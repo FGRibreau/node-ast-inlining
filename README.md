@@ -4,7 +4,7 @@ Node Ast Inlining is a small (~200 LOC) library that [inline and expand](http://
 
 ### Work In Progress
 
-Node Ast Inlining currently inling-expand only method calls and inline simple function with return statement.
+Node Ast Inlining currently inling only method calls and expand simple function with one return statement.
 
 ### Installation
 
@@ -60,9 +60,9 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 
     % node bench/bench.js
 
-![Benchmark](http://bit.ly/r9wAwI "Benchmark's result")
+![Benchmark](http://chart.apis.google.com/chart?chtt=Operations/second%20on%20node|(v0.4.11%20/%20darwin)&chts=000000,10&cht=bhg&chd=t:1464000,1648000&chds=0,1648000&chxt=x&chxl=0:|0|1.648M&chsp=0,1&chm=tWithout%20inlining(1.464M),000000,0,0,10|tWith%20inlining(1.648M),000000,0,1,10&chbh=15,0,5&chs=250x110 "Benchmark's result")
 
-![Benchmark](http://bit.ly/r6pUZp "Benchmark's result")
+![Benchmark](http://chart.apis.google.com/chart?chtt=Operations/second%20on%20node|(v0.4.11%20/%20darwin)&chts=000000,10&cht=bhg&chd=t:875600,1500000&chds=0,1500000&chxt=x&chxl=0:|0|1.5M&chsp=0,1&chm=tWithout%20inlining(875.6k),000000,0,0,10|tWith%20inlining(1.5M),000000,0,1,10&chbh=15,0,5&chs=250x110 "Benchmark's result")
 
 ### Tests
     % make test
@@ -71,8 +71,8 @@ This package can be installed via [npm](http://npmjs.org/) as follows
     % nodeunit test/ast_inlining.test.js
 
 ### TODO
- * `extremeInline` option which inline native Number and String's prototype method like toLowerCase()
- * Inline & expand small function < 5 LOC  
+ * `extremeInline` option for native Date, Number and String's prototype method inlining
+ * Inline & expand small function < 10 LOC
 
 ### Licence
 
