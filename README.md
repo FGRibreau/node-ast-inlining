@@ -67,7 +67,7 @@ This package can be installed via [npm](http://npmjs.org/) as follows
     % make test
   Or
 
-    % nodeunit test/ast_inlining.test.js
+    % nodeunit test/*.test.js
 
 ### TODO
  * `extremeInline` option for native Date, Number and String's prototype method inlining
