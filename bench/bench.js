@@ -4,7 +4,7 @@
   jsp = require("uglify-js").parser;
   pro = require("uglify-js").uglify;
   vm = require('vm');
-  sys = require('sys');
+  util = require('util');
   inliner = require('../index');
   eval = function(sourceCode, isVerbose, evalContext) {
     try {
@@ -54,7 +54,7 @@
     return func2(data);
   });
   jslitmus.on('complete', function(test) {
-    return sys.log(test);
+    return util.log(test);
   });
   jslitmus.on('all_complete', function() {
     return console.log("\n", jslitmus.getGoogleChart());
