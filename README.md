@@ -73,6 +73,9 @@ This package can be installed via [npm](http://npmjs.org/) as follows
  * `extremeInline` option for native Date, Number and String's prototype method inlining
  * Inline & expand small function < 10 LOC
 
+## Donate
+[Donate Bitcoins](https://coinbase.com/checkouts/fc3041b9d8116e0b98e7d243c4727a30)
+
 ### Licence
 
 Copyright (c) 2011, Francois-Guillaume Ribreau <node@fgribreau.com>
