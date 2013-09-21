@@ -1,4 +1,4 @@
-# Node Ast Inlining [![Build Status](https://secure.travis-ci.org/FGRibreau/node-ast-inlining.png)](http://travis-ci.org/FGRibreau/node-ast-inlining) #
+# Node Ast Inlining [![Build Status](https://secure.travis-ci.org/FGRibreau/node-ast-inlining.png)](http://travis-ci.org/FGRibreau/node-ast-inlining) [![Gittip](http://badgr.co/gittip/fgribreau.png)](https://www.gittip.com/fgribreau/)
 
 Node Ast Inlining is a small (~200 LOC) library that [inline and expand](http://en.wikipedia.org/wiki/Inline_expansion) function call
 
